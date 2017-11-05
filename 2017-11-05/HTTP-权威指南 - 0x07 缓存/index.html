@@ -6,14 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.tribf.com">
-  <title>Archives: 2017/10 | Tr!BF</title>
+  <title>HTTP-权威指南 - 0x07 缓存 | Tr!BF</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Tr!BF">
-<meta property="og:url" content="http://www.tribf.com/archives/2017/10/index.html">
+  <meta name="description" content="哈哈，现在系统可以支持八个明星并发出轨! —— by: weibo  解释缓存命中（cache hit）：客户端请求由缓存提供服务，服务器并不知道该请求的接入 缓存未命中（cache miss）：客户端请求无对应的缓存副本可用，请求被转发给服务器 缓存再验证（revalidation）：大部分缓存只有在客户端请求且副本够旧的时候才会进行再验证，验证时如果服务器返回 304 则表示副本仍然新鲜，返">
+<meta name="keywords" content="HTTP-权威指南,HTTP,HARD">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTTP-权威指南 - 0x07 缓存">
+<meta property="og:url" content="http://www.tribf.com/2017-11-05/HTTP-权威指南 - 0x07 缓存/index.html">
 <meta property="og:site_name" content="Tr!BF">
+<meta property="og:description" content="哈哈，现在系统可以支持八个明星并发出轨! —— by: weibo  解释缓存命中（cache hit）：客户端请求由缓存提供服务，服务器并不知道该请求的接入 缓存未命中（cache miss）：客户端请求无对应的缓存副本可用，请求被转发给服务器 缓存再验证（revalidation）：大部分缓存只有在客户端请求且副本够旧的时候才会进行再验证，验证时如果服务器返回 304 则表示副本仍然新鲜，返">
+<meta property="og:image" content="https://assets-cdn.github.com/images/icons/emoji/unicode/1f624.png?v7">
+<meta property="og:image" content="https://assets-cdn.github.com/images/icons/emoji/unicode/1f449.png?v7">
+<meta property="og:updated_time" content="2017-11-05T15:58:27.893Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tr!BF">
+<meta name="twitter:title" content="HTTP-权威指南 - 0x07 缓存">
+<meta name="twitter:description" content="哈哈，现在系统可以支持八个明星并发出轨! —— by: weibo  解释缓存命中（cache hit）：客户端请求由缓存提供服务，服务器并不知道该请求的接入 缓存未命中（cache miss）：客户端请求无对应的缓存副本可用，请求被转发给服务器 缓存再验证（revalidation）：大部分缓存只有在客户端请求且副本够旧的时候才会进行再验证，验证时如果服务器返回 304 则表示副本仍然新鲜，返">
+<meta name="twitter:image" content="https://assets-cdn.github.com/images/icons/emoji/unicode/1f624.png?v7">
   
     <link rel="alternative" href="/atom.xml" title="Tr!BF" type="application/atom+xml">
   
@@ -145,72 +153,248 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-HTTP-权威指南 - 0x07 缓存" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017-10-31/ABS - 0x00 Sha-Bang/" class="archive-article-date">
-  	<time datetime="2017-10-31T13:36:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-31</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017-10-31/ABS - 0x00 Sha-Bang/">ABS - 0x00 Sha-Bang</a>
+    <h1 class="article-title" itemprop="name">
+      HTTP-权威指南 - 0x07 缓存
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017-11-05/HTTP-权威指南 - 0x07 缓存/" class="archive-article-date">
+  	<time datetime="2017-11-05T15:17:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>哈哈，现在系统可以支持八个明星并发出轨!</p>
+<p>—— by: weibo</p>
+</blockquote>
+<h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><p>缓存命中（cache hit）：客户端请求由缓存提供服务，服务器并不知道该请求的接入</p>
+<p>缓存未命中（cache miss）：客户端请求无对应的缓存副本可用，请求被转发给服务器</p>
+<p>缓存再验证（revalidation）：大部分缓存只有在客户端请求且副本够旧的时候才会进行再验证，验证时如果服务器返回 304 则表示副本仍然新鲜，返回200并带上body则表示再验证未命中。<br><a id="more"></a></p>
+<h2 id="缓存的处理步骤"><a href="#缓存的处理步骤" class="headerlink" title="缓存的处理步骤"></a>缓存的处理步骤</h2><p>下面是一条 HTTP GET 报文的缓存处理步骤。</p>
+<p><div id="flowchart-0" class="flow-chart"></div><br><a href="https://github.com/adrai/flowchart.js" target="_blank" rel="external">chartflow.js</a> 怎么控制线长啊 <img class="github-emoji" style="display:inline;vertical-align:text-bottom" title="triumph" alt="triumph" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f624.png?v7" height="20" width="20"> ？？？</p>
+<h2 id="服务器如何设定文档的过期"><a href="#服务器如何设定文档的过期" class="headerlink" title="服务器如何设定文档的过期"></a>服务器如何设定文档的过期</h2><p>在文档过期之前，缓存可以以任意频率使用文档副本，而无需与服务器联系（除非客户端使用了阻止提供已缓存或为验证资源的首部）。一旦缓存副本过期，缓存就必须与服务器再验证，确定文档的新鲜度。</p>
+<p>服务器是最开始的内容提供者，需要由服务器从一开始控制文档的缓存。服务器可以使用 HTTP/1.0+ 的 Expires:<date> 或 HTTP/1.1 的 Cache-Control:max-age 响应首部来指定过期日期，同时带上响应主体。考虑到不同机器的时钟同步问题，由于 Expires 依赖于系统的绝对时间所以不推荐使用。</date></p>
+<h2 id="缓存再验证"><a href="#缓存再验证" class="headerlink" title="缓存再验证"></a>缓存再验证</h2><p>当服务器设置的文档过期时间到了，缓存需要向服务器重新核对文档的新鲜度。</p>
+<ul>
+<li>如果再验证未命中，缓存会获取一份新的文档副本，并更新新的过期时间（可能是 404， 那么就删除缓存的文档副本，同时缓存返回客户端 404）</li>
+<li>如果再验证命中，缓存只需要更新原副本的首部（新的过期时间），然后将副本返回给客户端</li>
+</ul>
+<p>缓存再验证时使用的首部是 If-Modified-Since 和 If-None-Match 这两个条件首部。</p>
+<h3 id="If-Modified-Since-首部"><a href="#If-Modified-Since-首部" class="headerlink" title="If-Modified-Since 首部"></a>If-Modified-Since 首部</h3><p>IMS 首部通常与服务器的 Last-Modified 首部配合使用，缓存发送 IMS 请求时携带服务器的 Last-Modified 值，由服务器进行判断。</p>
+<ul>
+<li>如果文档没有修改，服务器发送 304 的同时还需要发送一个新的过期日期。</li>
+</ul>
+<h3 id="If-None-Match-首部"><a href="#If-None-Match-首部" class="headerlink" title="If-None-Match 首部"></a>If-None-Match 首部</h3><p>If-Modified-Since 首部的时间粒度只能到秒，对于更加频繁变动的文档 If-Modified-Since 将不再适用，同时仅根据文档的修改时间不足以表示文档内容的变化与否，所以需要一个类似文档指纹的 ETag 标签表示文档的版本。这样 If-None-Match 配合 ETag 就能对文档缓存进行更好的控制。</p>
+<h3 id="什么时候用-If-Modified-Since-和-If-None-Match"><a href="#什么时候用-If-Modified-Since-和-If-None-Match" class="headerlink" title="什么时候用 If-Modified-Since 和 If-None-Match"></a>什么时候用 If-Modified-Since 和 If-None-Match</h3><p>如果服务器放回了 ETag， HTTP/1.1 客户端就必须使用 If-None-Match 进行再验证。如果服务器只返回了 Last-Modified，客户端可以使用 If-Modified-Since 进行再验证。 如果服务器 ETag 和 Last-Modified 都提供了，那么客户端就应该同时使用这两种方法。当服务器同时收到 If-None-Match 和 If-Modified-Since 时，那么只有两个都满足时服务器才能返回 304。</p>
+<h2 id="控制缓存"><a href="#控制缓存" class="headerlink" title="控制缓存"></a>控制缓存</h2><p>按照优先级的顺序，下面可以控制缓存时间</p>
+<ul>
+<li>Cache-Control:no-store 首部，该响应会禁止缓存对文档的复制</li>
+<li>Cache-Control:no-cache 首部，该响应可以存储在客户端的本地缓存中，只是在再校验之前缓存不能将其提供给客户端</li>
+<li>Cache-Control:must-revalidate 首部，限制缓存在没有再验证前不可以提供文档的陈旧副本</li>
+<li>Cache-Control:max-age 首部，服务器可以设置 max-age=0 限制缓存</li>
+<li>Expires 首部，正如之前所说，不推荐使用</li>
+<li>无过期信息，由缓存自行决定，比如 LM-Factor 算法</li>
+</ul>
+<h2 id="客户端刷新或重载"><a href="#客户端刷新或重载" class="headerlink" title="客户端刷新或重载"></a>客户端刷新或重载</h2><p>客户端浏览器通过刷新（Refresh）或重载（Reload）可以强制对浏览器或代理缓存中可能过期的内容进行刷新。此时，客户端的请求中会带上 Cache-Control 首部</p>
+<h2 id="Notes"><a href="#Notes" class="headerlink" title=" Notes"></a><strong><img class="github-emoji" style="display:inline;vertical-align:text-bottom" title="point_right" alt="point_right" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f449.png?v7" height="20" width="20"> Notes</strong></h2><ul>
+<li>HTTP 日期和时间都是 GMT （EEE, dd MMM yyyy HH:mm:ss zzz） 时间。</li>
+<li>根据流量计费时更多的是关心字节命中率（byte hit rate）而非文档命中率（document hit rate）。<br>  $字节命中率=\frac{缓存提供的字节}{所有传输字节}$</li>
+<li>有些 HTTP 服务器并没有将 If-Modified-Since 作为真正的日期来进行比较，而是与 Last-Modified 值进行字符串匹配</li>
+<li>If-None-Match 首部中可以携带由逗号分割的多个实体标签</li>
+<li>在缓存进行 Cache-Control:must-revalidate 的再验证时，如果原始服务器不可用，缓存必须返回一条 504 Gateway Timeout 错误</li>
+<li>Chrome 中，通过使用 Inspect -&gt; Network -&gt; Disable cache 可以关闭 Chrome 当前的缓存， chrome://cache 地址可以查看所有缓存的内容<br><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: 开始
+e=>end: 结束
+op1=>operation: 请求到达
+op2=>operation: 再验证
+op3=>operation: 提供给客户端
+op4=>operation: 从服务器获取
+op5=>operation: 更新缓存
+op6=>operation: 更新缓存新鲜度
+
+cond1=>condition: 是否已缓存?
+cond2=>condition: 是否新鲜？
+cond3=>condition: 再验证命中？
+
+st->op1->cond1
+cond1(yes, down)->cond2
+cond1(no, right)->op4->op5->op3
+
+cond2(no, right)->op2(right)->cond3
+cond3(yes, down)->op6->op3
+cond3(no, right)->op4->op5->op3->e
+cond2(yes)->op3->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":20,"text-margin":10,"font-size":12,"yes-text":"是","no-text":"否"}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTTP-权威指南</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTTP</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HARD</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ABS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Shell</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://www.tribf.com/2017-11-05/HTTP-权威指南 - 0x07 缓存/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017-10-31/ABS - 0x00 Sha-Bang/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">ABS - 0x00 Sha-Bang</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#解释"><span class="toc-number">1.</span> <span class="toc-text">解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#缓存的处理步骤"><span class="toc-number">2.</span> <span class="toc-text">缓存的处理步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#服务器如何设定文档的过期"><span class="toc-number">3.</span> <span class="toc-text">服务器如何设定文档的过期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#缓存再验证"><span class="toc-number">4.</span> <span class="toc-text">缓存再验证</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#If-Modified-Since-首部"><span class="toc-number">4.1.</span> <span class="toc-text">If-Modified-Since 首部</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#If-None-Match-首部"><span class="toc-number">4.2.</span> <span class="toc-text">If-None-Match 首部</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#什么时候用-If-Modified-Since-和-If-None-Match"><span class="toc-number">4.3.</span> <span class="toc-text">什么时候用 If-Modified-Since 和 If-None-Match</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#控制缓存"><span class="toc-number">5.</span> <span class="toc-text">控制缓存</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#客户端刷新或重载"><span class="toc-number">6.</span> <span class="toc-text">客户端刷新或重载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Notes"><span class="toc-number">7.</span> <span class="toc-text"> Notes</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -233,8 +417,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

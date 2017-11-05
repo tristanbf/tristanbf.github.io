@@ -6,14 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.tribf.com">
-  <title>Archives: 2017/10 | Tr!BF</title>
+  <title>ABS - 0x00 Sha-Bang | Tr!BF</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Tr!BF">
-<meta property="og:url" content="http://www.tribf.com/archives/2017/10/index.html">
+  <meta name="description" content="“胶水语言”？  嗯，shell ！！！  一份执行就消失的脚本 介绍 Sha-Bang(#!) 中引入了一个“自己删除自己”的例子，执行后等同于运行了 rm sh_filename 。123456789#!/bin/rm# Self-deleting script.# Nothing much seems to happen when you run this... except that t">
+<meta name="keywords" content="HARD,ABS,Linux,Shell">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ABS - 0x00 Sha-Bang">
+<meta property="og:url" content="http://www.tribf.com/2017-10-31/ABS - 0x00 Sha-Bang/index.html">
 <meta property="og:site_name" content="Tr!BF">
+<meta property="og:description" content="“胶水语言”？  嗯，shell ！！！  一份执行就消失的脚本 介绍 Sha-Bang(#!) 中引入了一个“自己删除自己”的例子，执行后等同于运行了 rm sh_filename 。123456789#!/bin/rm# Self-deleting script.# Nothing much seems to happen when you run this... except that t">
+<meta property="og:image" content="https://assets-cdn.github.com/images/icons/emoji/unicode/1f602.png?v7">
+<meta property="og:image" content="https://assets-cdn.github.com/images/icons/emoji/unicode/1f449.png?v7">
+<meta property="og:updated_time" content="2017-11-05T15:25:01.402Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tr!BF">
+<meta name="twitter:title" content="ABS - 0x00 Sha-Bang">
+<meta name="twitter:description" content="“胶水语言”？  嗯，shell ！！！  一份执行就消失的脚本 介绍 Sha-Bang(#!) 中引入了一个“自己删除自己”的例子，执行后等同于运行了 rm sh_filename 。123456789#!/bin/rm# Self-deleting script.# Nothing much seems to happen when you run this... except that t">
+<meta name="twitter:image" content="https://assets-cdn.github.com/images/icons/emoji/unicode/1f602.png?v7">
   
     <link rel="alternative" href="/atom.xml" title="Tr!BF" type="application/atom+xml">
   
@@ -145,36 +153,69 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-ABS - 0x00 Sha-Bang" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017-10-31/ABS - 0x00 Sha-Bang/" class="archive-article-date">
-  	<time datetime="2017-10-31T13:36:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-31</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017-10-31/ABS - 0x00 Sha-Bang/">ABS - 0x00 Sha-Bang</a>
+    <h1 class="article-title" itemprop="name">
+      ABS - 0x00 Sha-Bang
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017-10-31/ABS - 0x00 Sha-Bang/" class="archive-article-date">
+  	<time datetime="2017-10-31T13:36:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>“胶水语言”？  嗯，shell ！！！</p>
+</blockquote>
+<h2 id="一份执行就消失的脚本"><a href="#一份执行就消失的脚本" class="headerlink" title="一份执行就消失的脚本"></a>一份执行就消失的脚本</h2><ul>
+<li>介绍 Sha-Bang(#!) 中引入了一个“自己删除自己”的例子，执行后等同于运行了 <code>rm sh_filename</code> <img class="github-emoji" style="display:inline;vertical-align:text-bottom" title="joy" alt="joy" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f602.png?v7" height="20" width="20">。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#!/bin/rm</span></div><div class="line"><span class="comment"># Self-deleting script.</span></div><div class="line"><span class="comment"># Nothing much seems to happen when you run this... except that the file disappears.</span></div><div class="line"></div><div class="line">WHATEVER=85</div><div class="line"><span class="built_in">echo</span> <span class="string">"This line will never print (betcha!)."</span></div><div class="line"><span class="built_in">exit</span> <span class="variable">$WHATEVER</span>  <span class="comment"># Doesn't matter. The script will not exit here.</span></div><div class="line">                <span class="comment"># Try an echo $? after script termination.</span></div><div class="line">                <span class="comment"># You'll get a 0, not a 85.</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<a id="more"></a>
+<h2 id="Notes"><a href="#Notes" class="headerlink" title=" Notes"></a><strong><img class="github-emoji" style="display:inline;vertical-align:text-bottom" title="point_right" alt="point_right" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f449.png?v7" height="20" width="20"> Notes</strong></h2><ul>
+<li>Python 也被称为“胶水语言”</li>
+<li>#! 实际上是用于确定文件类型的“magic number”，其作用就是确定正确的命令解释器来解释该文件，当解释器启动，该行便成为普通的注释行。推荐使用 <code>#!/bin/env bash</code> 作为 Sha-Bang 行</li>
+<li>使用 <code>sh scriptname</code> 调用脚本时会关闭 Bash 的内置的扩展功能</li>
+<li></li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -198,19 +239,123 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://www.tribf.com/2017-10-31/ABS - 0x00 Sha-Bang/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017-11-05/HTTP-权威指南 - 0x07 缓存/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          HTTP-权威指南 - 0x07 缓存
+        
+      </div>
+    </a>
   
   
-    </div></section>
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一份执行就消失的脚本"><span class="toc-number">1.</span> <span class="toc-text">一份执行就消失的脚本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Notes"><span class="toc-number">2.</span> <span class="toc-text"> Notes</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -233,8 +378,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
