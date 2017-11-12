@@ -56,7 +56,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/随笔/">随笔</a></li>
+				<li><a href="/tags/HARD/">硬实力</a></li>
 	        
 			</ul>
 		</nav>
@@ -130,7 +130,7 @@
 				
 					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 50%"><a href="/tags/HARD/">硬实力</a></li>
 		        
 				</ul>
 			</nav>
@@ -146,6 +146,93 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-Effective-Java-II-0x02-生与死" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017-11-07/Effective-Java-II-0x02-生与死/">Effective Java II - 0x02 生与死</a>
+    </h1>
+  
+
+        
+        <a href="/2017-11-07/Effective-Java-II-0x02-生与死/" class="archive-article-date">
+  	<time datetime="2017-11-07T15:00:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>你的脑子里要装上概念的几个例子（“实例”）， 这样就记得住概念啦！<br>— by 张老师</p>
+</blockquote>
+<h2 id="bp-静态工厂（static-factory）"><a href="#bp-静态工厂（static-factory）" class="headerlink" title="bp - 静态工厂（static factory）"></a>bp - 静态工厂（static factory）</h2><p>看一看 java.math.BigInteger 中 “静态工厂” 概念的实例：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment"> * Returns a positive BigInteger that is probably prime, with the</span></div><div class="line"><span class="comment"> * specified bitLength. The probability that a BigInteger returned</span></div><div class="line"><span class="comment"> * by this method is composite does not exceed 2&lt;sup&gt;-100&lt;/sup&gt;.</span></div><div class="line"><span class="comment"> *</span></div><div class="line"><span class="comment"> * <span class="doctag">@param</span>  bitLength bitLength of the returned BigInteger.</span></div><div class="line"><span class="comment"> * <span class="doctag">@param</span>  rnd source of random bits used to select candidates to be</span></div><div class="line"><span class="comment"> *         tested for primality.</span></div><div class="line"><span class="comment"> * <span class="doctag">@return</span> a BigInteger of &#123;<span class="doctag">@code</span> bitLength&#125; bits that is probably prime</span></div><div class="line"><span class="comment"> * <span class="doctag">@throws</span> ArithmeticException &#123;<span class="doctag">@code</span> bitLength &lt; 2&#125; or &#123;<span class="doctag">@code</span> bitLength&#125; is too large.</span></div><div class="line"><span class="comment"> * <span class="doctag">@see</span>    #bitLength()</span></div><div class="line"><span class="comment"> * <span class="doctag">@since</span> 1.4</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> BigInteger <span class="title">probablePrime</span><span class="params">(<span class="keyword">int</span> bitLength, Random rnd)</span> </span>&#123;</div><div class="line">    <span class="keyword">if</span> (bitLength &lt; <span class="number">2</span>)</div><div class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> ArithmeticException(<span class="string">"bitLength &lt; 2"</span>);</div><div class="line"></div><div class="line">    <span class="keyword">return</span> (bitLength &lt; SMALL_PRIME_THRESHOLD ?</div><div class="line">            smallPrime(bitLength, DEFAULT_PRIME_CERTAINTY, rnd) :</div><div class="line">            largePrime(bitLength, DEFAULT_PRIME_CERTAINTY, rnd));</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+        
+          <a class="article-more-a" href="/2017-11-07/Effective-Java-II-0x02-生与死/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HARD</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Effective Java</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017-11-07/Effective-Java-II-0x02-生与死/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-HTTP-权威指南 - 0x07 缓存" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -189,15 +276,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HARD</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTTP-权威指南</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTTP</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HARD</a>
         		</li>
       		
 		</ul>
@@ -264,9 +351,12 @@
 <li>介绍 Sha-Bang(#!) 中引入了一个“自己删除自己”的例子，执行后等同于运行了 <code>rm sh_filename</code> <img class="github-emoji" style="display:inline;vertical-align:text-bottom" title="joy" alt="joy" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f602.png?v7" height="20" width="20">。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#!/bin/rm</span></div><div class="line"><span class="comment"># Self-deleting script.</span></div><div class="line"><span class="comment"># Nothing much seems to happen when you run this... except that the file disappears.</span></div><div class="line"></div><div class="line">WHATEVER=85</div><div class="line"><span class="built_in">echo</span> <span class="string">"This line will never print (betcha!)."</span></div><div class="line"><span class="built_in">exit</span> <span class="variable">$WHATEVER</span>  <span class="comment"># Doesn't matter. The script will not exit here.</span></div><div class="line">                <span class="comment"># Try an echo $? after script termination.</span></div><div class="line">                <span class="comment"># You'll get a 0, not a 85.</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
-        
-          <a class="article-more-a" href="/2017-10-31/ABS - 0x00 Sha-Bang/#more">more >></a>
-        
+<h2 id="Notes"><a href="#Notes" class="headerlink" title=" Notes"></a><strong><img class="github-emoji" style="display:inline;vertical-align:text-bottom" title="point_right" alt="point_right" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f449.png?v7" height="20" width="20"> Notes</strong></h2><ul>
+<li>Python 也被称为“胶水语言”</li>
+<li>#! 实际上是用于确定文件类型的“magic number”，其作用就是确定正确的命令解释器来解释该文件，当解释器启动，该行便成为普通的注释行。推荐使用 <code>#!/bin/env bash</code> 作为 Sha-Bang 行</li>
+<li>使用 <code>sh scriptname</code> 调用脚本时会关闭 Bash 的内置扩展功能</li>
+</ul>
+
       
 
       
@@ -279,6 +369,10 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HARD</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ABS</a>
         		</li>
       		 
@@ -288,10 +382,6 @@
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Shell</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HARD</a>
         		</li>
       		
 		</ul>
@@ -446,15 +536,11 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">ABS</a>
+                <a href="javascript:void(0)" class="js-tag color5">HTTP-权威指南</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -462,11 +548,31 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP-权威指南</a>
+                <a href="javascript:void(0)" class="js-tag color4">ABS</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+                <a href="javascript:void(0)" class="js-tag color5">Linx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">SHELL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Effective Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
             
             <div class="clearfix"></div>

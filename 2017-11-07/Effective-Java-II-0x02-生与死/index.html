@@ -6,14 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.tribf.com">
-  <title>Tag: HTTP | Tr!BF</title>
+  <title>Effective Java II - 0x02 生与死 | Tr!BF</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Tr!BF">
-<meta property="og:url" content="http://www.tribf.com/tags/HTTP/index.html">
+  <meta name="description" content="你的脑子里要装上概念的几个例子（“实例”）， 这样就记得住概念啦！— by 张老师  bp - 静态工厂（static factory）看一看 java.math.BigInteger 中 “静态工厂” 概念的实例：123456789101112131415161718192021/** * Returns a positive BigInteger that is probably prime">
+<meta name="keywords" content="HARD,Effective Java,Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Effective Java II - 0x02 生与死">
+<meta property="og:url" content="http://www.tribf.com/2017-11-07/Effective-Java-II-0x02-生与死/index.html">
 <meta property="og:site_name" content="Tr!BF">
+<meta property="og:description" content="你的脑子里要装上概念的几个例子（“实例”）， 这样就记得住概念啦！— by 张老师  bp - 静态工厂（static factory）看一看 java.math.BigInteger 中 “静态工厂” 概念的实例：123456789101112131415161718192021/** * Returns a positive BigInteger that is probably prime">
+<meta property="og:image" content="https://assets-cdn.github.com/images/icons/emoji/unicode/1f61d.png?v7">
+<meta property="og:image" content="https://assets-cdn.github.com/images/icons/emoji/unicode/1f631.png?v7">
+<meta property="og:image" content="https://assets-cdn.github.com/images/icons/emoji/unicode/1f602.png?v7">
+<meta property="og:image" content="https://assets-cdn.github.com/images/icons/emoji/unicode/1f449.png?v7">
+<meta property="og:updated_time" content="2017-11-12T16:01:23.524Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tr!BF">
+<meta name="twitter:title" content="Effective Java II - 0x02 生与死">
+<meta name="twitter:description" content="你的脑子里要装上概念的几个例子（“实例”）， 这样就记得住概念啦！— by 张老师  bp - 静态工厂（static factory）看一看 java.math.BigInteger 中 “静态工厂” 概念的实例：123456789101112131415161718192021/** * Returns a positive BigInteger that is probably prime">
+<meta name="twitter:image" content="https://assets-cdn.github.com/images/icons/emoji/unicode/1f61d.png?v7">
   
     <link rel="alternative" href="/atom.xml" title="Tr!BF" type="application/atom+xml">
   
@@ -145,68 +155,246 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Effective-Java-II-0x02-生与死" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017-11-05/HTTP-权威指南 - 0x07 缓存/" class="archive-article-date">
-  	<time datetime="2017-11-05T15:17:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-05</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017-11-05/HTTP-权威指南 - 0x07 缓存/">HTTP-权威指南 - 0x07 缓存</a>
+    <h1 class="article-title" itemprop="name">
+      Effective Java II - 0x02 生与死
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017-11-07/Effective-Java-II-0x02-生与死/" class="archive-article-date">
+  	<time datetime="2017-11-07T15:00:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>你的脑子里要装上概念的几个例子（“实例”）， 这样就记得住概念啦！<br>— by 张老师</p>
+</blockquote>
+<h2 id="bp-静态工厂（static-factory）"><a href="#bp-静态工厂（static-factory）" class="headerlink" title="bp - 静态工厂（static factory）"></a>bp - 静态工厂（static factory）</h2><p>看一看 java.math.BigInteger 中 “静态工厂” 概念的实例：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment"> * Returns a positive BigInteger that is probably prime, with the</span></div><div class="line"><span class="comment"> * specified bitLength. The probability that a BigInteger returned</span></div><div class="line"><span class="comment"> * by this method is composite does not exceed 2&lt;sup&gt;-100&lt;/sup&gt;.</span></div><div class="line"><span class="comment"> *</span></div><div class="line"><span class="comment"> * <span class="doctag">@param</span>  bitLength bitLength of the returned BigInteger.</span></div><div class="line"><span class="comment"> * <span class="doctag">@param</span>  rnd source of random bits used to select candidates to be</span></div><div class="line"><span class="comment"> *         tested for primality.</span></div><div class="line"><span class="comment"> * <span class="doctag">@return</span> a BigInteger of &#123;<span class="doctag">@code</span> bitLength&#125; bits that is probably prime</span></div><div class="line"><span class="comment"> * <span class="doctag">@throws</span> ArithmeticException &#123;<span class="doctag">@code</span> bitLength &lt; 2&#125; or &#123;<span class="doctag">@code</span> bitLength&#125; is too large.</span></div><div class="line"><span class="comment"> * <span class="doctag">@see</span>    #bitLength()</span></div><div class="line"><span class="comment"> * <span class="doctag">@since</span> 1.4</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> BigInteger <span class="title">probablePrime</span><span class="params">(<span class="keyword">int</span> bitLength, Random rnd)</span> </span>&#123;</div><div class="line">    <span class="keyword">if</span> (bitLength &lt; <span class="number">2</span>)</div><div class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> ArithmeticException(<span class="string">"bitLength &lt; 2"</span>);</div><div class="line"></div><div class="line">    <span class="keyword">return</span> (bitLength &lt; SMALL_PRIME_THRESHOLD ?</div><div class="line">            smallPrime(bitLength, DEFAULT_PRIME_CERTAINTY, rnd) :</div><div class="line">            largePrime(bitLength, DEFAULT_PRIME_CERTAINTY, rnd));</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>看一看 java.util.Collections 中 “静态工厂” 概念的实例：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment"> * The empty list (immutable).  This list is serializable.</span></div><div class="line"><span class="comment"> *</span></div><div class="line"><span class="comment"> * <span class="doctag">@see</span> #emptyList()</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="meta">@SuppressWarnings</span>(<span class="string">"rawtypes"</span>)</div><div class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> List EMPTY_LIST = <span class="keyword">new</span> EmptyList&lt;&gt;();</div><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment"> * Returns an empty list (immutable).  This list is serializable.</span></div><div class="line"><span class="comment"> *</span></div><div class="line"><span class="comment"> * &lt;p&gt;This example illustrates the type-safe way to obtain an empty list:</span></div><div class="line"><span class="comment"> * &lt;pre&gt;</span></div><div class="line"><span class="comment"> *     List&amp;lt;String&amp;gt; s = Collections.emptyList();</span></div><div class="line"><span class="comment"> * &lt;/pre&gt;</span></div><div class="line"><span class="comment"> *</span></div><div class="line"><span class="comment"> * <span class="doctag">@implNote</span></span></div><div class="line"><span class="comment"> * Implementations of this method need not create a separate &lt;tt&gt;List&lt;/tt&gt;</span></div><div class="line"><span class="comment"> * object for each call.   Using this method is likely to have comparable</span></div><div class="line"><span class="comment"> * cost to using the like-named field.  (Unlike this method, the field does</span></div><div class="line"><span class="comment"> * not provide type safety.)</span></div><div class="line"><span class="comment"> *</span></div><div class="line"><span class="comment"> * <span class="doctag">@param</span> &lt;T&gt; type of elements, if there were any, in the list</span></div><div class="line"><span class="comment"> * <span class="doctag">@return</span> an empty immutable list</span></div><div class="line"><span class="comment"> *</span></div><div class="line"><span class="comment"> * <span class="doctag">@see</span> #EMPTY_LIST</span></div><div class="line"><span class="comment"> * <span class="doctag">@since</span> 1.5</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)</div><div class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> &lt;T&gt; <span class="function">List&lt;T&gt; <span class="title">emptyList</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">return</span> (List&lt;T&gt;) EMPTY_LIST;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="什么时候会想到静态工厂"><a href="#什么时候会想到静态工厂" class="headerlink" title="什么时候会想到静态工厂"></a>什么时候会想到静态工厂</h3><ul>
+<li>如果需要某个类别具一格的实例</li>
+<li>如果需要提供一个事先构造好的实例以提高性能</li>
+<li>如果需要像 java.util.Collections 一样返回”子类型”，对于接口提供者后期可以放心大胆的更新升级</li>
+<li>如果需要实现 服务提供者框架（Service Provider Framework）</li>
+</ul>
+<h2 id="bp-链式调用进行构造（class-builder）"><a href="#bp-链式调用进行构造（class-builder）" class="headerlink" title="bp - 链式调用进行构造（class builder）"></a>bp - 链式调用进行构造（class builder）</h2><p>看一下 Apache Curator 中的一个 demo：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> CuratorFramework  <span class="title">createWithOptions</span><span class="params">(String connectionString, RetryPolicy retryPolicy, <span class="keyword">int</span> connectionTimeoutMs, <span class="keyword">int</span> sessionTimeoutMs)</span></span></div><div class="line"><span class="function"></span>&#123;</div><div class="line">    <span class="comment">// using the CuratorFrameworkFactory.builder() gives fine grained control</span></div><div class="line">    <span class="comment">// over creation options. See the CuratorFrameworkFactory.Builder javadoc</span></div><div class="line">    <span class="comment">// details</span></div><div class="line">    <span class="keyword">return</span> CuratorFrameworkFactory.builder()</div><div class="line">        .connectString(connectionString)</div><div class="line">        .retryPolicy(retryPolicy)</div><div class="line">        .connectionTimeoutMs(connectionTimeoutMs)</div><div class="line">        .sessionTimeoutMs(sessionTimeoutMs)</div><div class="line">        <span class="comment">// etc. etc.</span></div><div class="line">        .build();</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="什么时候使用-Builder"><a href="#什么时候使用-Builder" class="headerlink" title="什么时候使用 Builder"></a>什么时候使用 Builder</h3><ul>
+<li>如果构造方法需要很多参数的时候，特别是有可选参数的时候</li>
+<li>如果 Java Beans 模式会带来潜在的并发问题等</li>
+</ul>
+<h2 id="bp-加强版单例"><a href="#bp-加强版单例" class="headerlink" title="bp - 加强版单例"></a>bp - 加强版单例</h2><p>关于 java 中的单例，大家总结的有五种方法（对号入座 <img class="github-emoji" style="display:inline;vertical-align:text-bottom" title="stuck_out_tongue_closed_eyes" alt="stuck_out_tongue_closed_eyes" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f61d.png?v7" height="20" width="20">）：</p>
+<ul>
+<li>懒汉 （lazy initialization）</li>
+<li>饿汉</li>
+<li>双重校验锁</li>
+<li>静态内部类</li>
+<li>枚举</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Singleton instance;</div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span> <span class="params">()</span></span>&#123;&#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;     <span class="comment">// not thread safe, add synchronized</span></div><div class="line">        <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;</div><div class="line">            instance = <span class="keyword">new</span> Singleton();</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> instance;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getSingleton</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;                     <span class="comment">// Single Checked</span></div><div class="line">        <span class="keyword">synchronized</span> (Singleton.class) &#123;</div><div class="line">            <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;             <span class="comment">// Double Checked</span></div><div class="line">                instance = <span class="keyword">new</span> Singleton();     <span class="comment">// new is not atomic, declare instance volatile</span></div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> instance ;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span></span>&#123;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton instance = <span class="keyword">new</span> Singleton();</div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;&#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;</div><div class="line">        <span class="keyword">return</span> instance;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;  </div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">SingletonHolder</span> </span>&#123;  </div><div class="line">        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton INSTANCE = <span class="keyword">new</span> Singleton();  </div><div class="line">    &#125;  </div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span> <span class="params">()</span></span>&#123;&#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;  </div><div class="line">        <span class="keyword">return</span> SingletonHolder.INSTANCE;</div><div class="line">    &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">enum</span> Singleton&#123;</div><div class="line">    INSTANCE;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="什么时候使用枚举创建单例"><a href="#什么时候使用枚举创建单例" class="headerlink" title="什么时候使用枚举创建单例"></a>什么时候使用枚举创建单例</h3><ul>
+<li>如果需要防止反射或者涉及到反序列化时</li>
+</ul>
+<h2 id="bp-给工具类加上私有的构造方法"><a href="#bp-给工具类加上私有的构造方法" class="headerlink" title="bp - 给工具类加上私有的构造方法"></a>bp - 给工具类加上私有的构造方法</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Noninstantiable utility class</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UtilityClass</span> </span>&#123;</div><div class="line">    <span class="comment">// Suppress default constructor for noninstantiability</span></div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="title">UtilityClass</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> AssertionError();</div><div class="line">    &#125;</div><div class="line">    ... <span class="comment">// Remainder omitted</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>再来看看 <a href="https://github.com/apache/storm/blob/master/storm-client/src/jvm/org/apache/storm/utils/ShellUtils.java" target="_blank" rel="external">org.apache.storm.utils.ShellUtils</a> 工具类的实现方法</p>
+<h2 id="bp-清楚的明白每个对象每次创建的目的"><a href="#bp-清楚的明白每个对象每次创建的目的" class="headerlink" title="bp - 清楚的明白每个对象每次创建的目的"></a>bp - 清楚的明白每个对象每次创建的目的</h2><ul>
+<li>代码上要减少 Ctrl+C，Ctrl+V。逻辑上也要减少不必要的重复</li>
+<li>留意自动装箱与拆箱 (Autoboxing and unboxing)</li>
+</ul>
+<p>看一看 java.util.HashMap 中的 KeySet 视图（一份足以）:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment"> * Returns a &#123;<span class="doctag">@link</span> Set&#125; view of the keys contained in this map.</span></div><div class="line"><span class="comment"> * The set is backed by the map, so changes to the map are</span></div><div class="line"><span class="comment"> * reflected in the set, and vice-versa.  If the map is modified</span></div><div class="line"><span class="comment"> * while an iteration over the set is in progress (except through</span></div><div class="line"><span class="comment"> * the iterator's own &lt;tt&gt;remove&lt;/tt&gt; operation), the results of</span></div><div class="line"><span class="comment"> * the iteration are undefined.  The set supports element removal,</span></div><div class="line"><span class="comment"> * which removes the corresponding mapping from the map, via the</span></div><div class="line"><span class="comment"> * &lt;tt&gt;Iterator.remove&lt;/tt&gt;, &lt;tt&gt;Set.remove&lt;/tt&gt;,</span></div><div class="line"><span class="comment"> * &lt;tt&gt;removeAll&lt;/tt&gt;, &lt;tt&gt;retainAll&lt;/tt&gt;, and &lt;tt&gt;clear&lt;/tt&gt;</span></div><div class="line"><span class="comment"> * operations.  It does not support the &lt;tt&gt;add&lt;/tt&gt; or &lt;tt&gt;addAll&lt;/tt&gt;</span></div><div class="line"><span class="comment"> * operations.</span></div><div class="line"><span class="comment"> *</span></div><div class="line"><span class="comment"> * <span class="doctag">@return</span> a set view of the keys contained in this map</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="function"><span class="keyword">public</span> Set&lt;K&gt; <span class="title">keySet</span><span class="params">()</span> </span>&#123;</div><div class="line">    Set&lt;K&gt; ks = keySet;</div><div class="line">    <span class="keyword">if</span> (ks == <span class="keyword">null</span>) &#123;</div><div class="line">        ks = <span class="keyword">new</span> KeySet();</div><div class="line">        keySet = ks;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> ks;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="bp-对象引用的管理"><a href="#bp-对象引用的管理" class="headerlink" title="bp - 对象引用的管理"></a>bp - 对象引用的管理</h2><ul>
+<li>对于不再使用的对象引用需要及时的置空，特别是对于自己管理内存的类</li>
+<li>对于大的缓存需要做到及时的更新，清除不用的键（WeakHashMap）</li>
+<li>对于通过注册 callback 的监听者，为了保证 callback 可以被及时清理应该使用弱引用</li>
+</ul>
+<h2 id="bp-深刻理解-Java-的-finalize-不靠谱"><a href="#bp-深刻理解-Java-的-finalize-不靠谱" class="headerlink" title="bp - 深刻理解 Java 的 finalize() 不靠谱 "></a>bp - 深刻理解 Java 的 finalize() 不靠谱 <img class="github-emoji" style="display:inline;vertical-align:text-bottom" title="scream" alt="scream" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f631.png?v7" height="20" width="20"></h2><p>问题的根源在于 finalize() 方法的执行时间没有保证。</p>
+<ul>
+<li>Java 中与 C++ 析构函数功能类似的应该是 try-finally 块</li>
+<li>通常对于需要回收资源的类，应该提供显示的方法和私有的状态。尽管如此，我们还是可以将 finalize() 作为回收资源的最后一道防线，同时记得在 finalize() 中进行告警</li>
+<li>对于非关键的本地资源，可以由代理的 java 对象在 finalize() 中调用本地方法进行回收（还是别这样用，会被笑话的，你说是最后一道防线也没用<img class="github-emoji" style="display:inline;vertical-align:text-bottom" title="joy" alt="joy" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f602.png?v7" height="20" width="20">）</li>
+<li>子类应该在其 finalize() 方法中以 finally 块的形式调用父类的 finalize() 方法</li>
+</ul>
+<h2 id="Notes"><a href="#Notes" class="headerlink" title=" Notes"></a><strong><img class="github-emoji" style="display:inline;vertical-align:text-bottom" title="point_right" alt="point_right" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f449.png?v7" height="20" width="20"> Notes</strong></h2><ul>
+<li>”子类型” 可以是继承了类也可以是实现了接口</li>
+<li>接口 Type 的静态工厂方法放在名为 Types 的类中，并且 Types 类不能实例化</li>
+<li>transient 关键字修饰的变量将不再是对象持久化的一部分</li>
+<li>readResolve 方法</li>
+<li>volatile 可以阻止编译后指令的重排序，保证编译后对 volatile 变量的写操作都会于读操作之前执行</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTTP-权威指南</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTTP</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HARD</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Effective Java</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://www.tribf.com/2017-11-07/Effective-Java-II-0x02-生与死/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017-11-05/HTTP-权威指南 - 0x07 缓存/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HTTP-权威指南 - 0x07 缓存</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#bp-静态工厂（static-factory）"><span class="toc-number">1.</span> <span class="toc-text">bp - 静态工厂（static factory）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#什么时候会想到静态工厂"><span class="toc-number">1.1.</span> <span class="toc-text">什么时候会想到静态工厂</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bp-链式调用进行构造（class-builder）"><span class="toc-number">2.</span> <span class="toc-text">bp - 链式调用进行构造（class builder）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#什么时候使用-Builder"><span class="toc-number">2.1.</span> <span class="toc-text">什么时候使用 Builder</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bp-加强版单例"><span class="toc-number">3.</span> <span class="toc-text">bp - 加强版单例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#什么时候使用枚举创建单例"><span class="toc-number">3.1.</span> <span class="toc-text">什么时候使用枚举创建单例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bp-给工具类加上私有的构造方法"><span class="toc-number">4.</span> <span class="toc-text">bp - 给工具类加上私有的构造方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bp-清楚的明白每个对象每次创建的目的"><span class="toc-number">5.</span> <span class="toc-text">bp - 清楚的明白每个对象每次创建的目的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bp-对象引用的管理"><span class="toc-number">6.</span> <span class="toc-text">bp - 对象引用的管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bp-深刻理解-Java-的-finalize-不靠谱"><span class="toc-number">7.</span> <span class="toc-text">bp - 深刻理解 Java 的 finalize() 不靠谱 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Notes"><span class="toc-number">8.</span> <span class="toc-text"> Notes</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -230,9 +418,9 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: false,
